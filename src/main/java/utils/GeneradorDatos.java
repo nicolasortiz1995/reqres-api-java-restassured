@@ -36,4 +36,12 @@ public class GeneradorDatos {
     public static String generarNumeroTelefonoAleatorio() {
         return faker.phoneNumber().cellPhone();
     }
+
+    public static String generarNombreCompletoAleatorio() {
+        return faker.name().firstName() + " " + faker.name().lastName();
+    }
+
+    public static String generarTrabajoAleatorio() {
+        return faker.job().title();
+    }
 }
