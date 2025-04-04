@@ -16,6 +16,7 @@ public class CrearNuevoUsuario {
         Response response = metodosPage.RequestPost(endpoint, GenerarPayloads.generarPayloadParaCrearUsuario());
         EscenarioContext.set("response", response);
         EscenarioContext.set("statusCode", response.getStatusCode());
+        System.out.println("Status code: "+ response.getStatusCode());
     }
 
     @Then("la respuesta debe contener un id generado y la fecha de creación")

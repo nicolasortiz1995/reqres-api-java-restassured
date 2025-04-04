@@ -14,4 +14,12 @@ public class GenerarPayloads {
                 "  \"job\": \"" + "Trabajo TCA" + "\"\n" +
                 "}";
     }
+
+    public static String generarPayloadParaUsuarioConDatos(String usuario, String contrasena) {
+        return "{\n" +
+                "  \"email\": \"" + usuario + "\",\n" +
+                "  \"password\": \"" + contrasena + "\"\n" +
+                "}";
+    }
+
 }

@@ -185,7 +185,7 @@
 
         <!-- Perfil para pruebas e2e -->
         <profile>
-            <id>e2e</id>
+            <id>e2e-test</id>
             <build>
                 <plugins>
                     <plugin>
@@ -197,7 +197,7 @@
                                 <include>**/TestRunner.java</include>
                             </includes>
                             <systemPropertyVariables>
-                                <cucumber.filter.tags>@e2e</cucumber.filter.tags>
+                                <cucumber.filter.tags>@e2e-test</cucumber.filter.tags>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>

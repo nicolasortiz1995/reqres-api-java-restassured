@@ -9,7 +9,6 @@ public class ObtenerUsuarioExistente {
     @Then("la respuesta debe incluir los datos del usuario con id {int}")
     public void laRespuestaDebeIncluirLosDatosDelUsuarioConId(int idEsperado) {
         Response response = (Response) EscenarioContext.get("response");
-        int id = response.jsonPath().getInt("data.id");
-        Assert.assertEquals(idEsperado, id, "El id no coincide");
+        Assert.assertEquals(idEsperado, response.jsonPath().getInt("data.id"), "El id no coincide");
     }
 }
