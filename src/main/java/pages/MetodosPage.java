@@ -31,4 +31,16 @@ public class MetodosPage {
                 .response();
     }
 
+    public Response RequestPut(String endpoint, String payload) {
+        return given()
+                .header("Content-Type", "application/json")
+                .header("Accept", "application/xml")
+                .body(payload)
+                .when()
+                .put(baseUrl + endpoint)
+                .then()
+                .extract()
+                .response();
+    }
+
 }

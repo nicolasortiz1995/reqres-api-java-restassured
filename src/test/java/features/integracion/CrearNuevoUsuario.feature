@@ -1,10 +1,9 @@
-@API @CrearNuevoUsuario
 Feature: Crear un nuevo usuario
   Como tester de API
   Quiero crear un nuevo usuario
   Para validar que se genere un "id" y se registre la fecha de creación
 
-  @happy-path
+  @happy-path @crear-usuario @integration-test
   Scenario: Crear un nuevo usuario
     Given que la API de ReqRes está disponible
     When se envía una solicitud POST a "api/users" con el payload correcto

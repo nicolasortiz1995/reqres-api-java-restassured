@@ -3,7 +3,7 @@ Feature: Obtener lista de usuarios
   Quiero obtener la lista de usuarios
   Para validar que la paginación y la cantidad de usuarios sean correctas
 
-  @happy-path
+  @happy-path @obtener-lista-usuarios @integration-test
   Scenario: Obtener lista de usuarios
     Given que la API de ReqRes está disponible
     When se envía una solicitud GET a "api/users?page=2"

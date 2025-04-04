@@ -3,7 +3,7 @@ Feature: Obtener un usuario existente
   Quiero obtener los detalles de un usuario específico
   Para validar que los datos del usuario sean correctos
 
-  @happy-path
+  @happy-path @obtener-usuario @integration-test
   Scenario: Obtener un usuario existente
     Given que la API de ReqRes está disponible
     When se envía una solicitud GET a "api/users/2"

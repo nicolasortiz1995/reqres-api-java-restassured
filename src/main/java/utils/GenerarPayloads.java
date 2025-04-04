@@ -7,4 +7,11 @@ public class GenerarPayloads {
                 "  \"job\": \"" + GeneradorDatos.generarTrabajoAleatorio() + "\"\n" +
                 "}";
     }
+
+    public static String generarPayloadParaActualizarUsuario(){
+        return "{\n" +
+                "  \"name\": \"" + "Nombre TCA" + "\",\n" +
+                "  \"job\": \"" + "Trabajo TCA" + "\"\n" +
+                "}";
+    }
 }
