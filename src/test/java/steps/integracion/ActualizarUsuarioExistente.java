@@ -7,7 +7,6 @@ import org.testng.Assert;
 import pages.MetodosPage;
 import utils.EscenarioContext;
 import utils.GenerarPayloads;
-import utils.GeneradorDatos;
 
 public class ActualizarUsuarioExistente {
     private final MetodosPage metodosPage = new MetodosPage();
@@ -27,7 +26,4 @@ public class ActualizarUsuarioExistente {
         Assert.assertTrue(nombreCompleto.contains("TCA"), "El nombre completo no contiene 'TCA'");
         Assert.assertTrue(trabajo.contains("TCA"), "El trabajo no contiene 'TCA'");
     }
-
-
-
 }

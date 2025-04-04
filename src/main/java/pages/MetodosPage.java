@@ -43,4 +43,14 @@ public class MetodosPage {
                 .response();
     }
 
+    public Response RequestDelete(String endpoint) {
+        return given()
+                .header("Content-Type", "application/json")
+                .header("Accept", "application/xml")
+                .when()
+                .delete(baseUrl + endpoint)
+                .then()
+                .extract()
+                .response();
+    }
 }
